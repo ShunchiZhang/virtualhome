@@ -256,7 +256,7 @@ class UnityCommunication(object):
 
 
         """
-        if not isinstance(camera_indexes, collections.Iterable):
+        if not isinstance(camera_indexes, collections.abc.Iterable):
             camera_indexes = [camera_indexes]
         response = self.post_command({'id': str(time.time()), 'action': 'camera_data',
                                       'intParams': camera_indexes})
@@ -272,7 +272,7 @@ class UnityCommunication(object):
         :param str image_heigth: height of the returned iamges
         :return: pair success (bool), images: (list) a list of images according to the camera rendering mode
         """
-        if not isinstance(camera_indexes, collections.Iterable):
+        if not isinstance(camera_indexes, collections.abc.Iterable):
             camera_indexes = [camera_indexes]
 
         params = {'mode': mode, 'image_width': image_width, 'image_height': image_height}

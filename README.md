@@ -5,3 +5,5 @@ This is a fork to fix some issues starting from [`virtualhome@wah`](https://gith
 ## Features
 
 - [x] editable install
+- [x] update deprecated function names
+  - [x] `collections.Iterable` -> `collections.abc.Iterable`
