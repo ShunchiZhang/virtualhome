@@ -17,7 +17,23 @@ import json
 import numpy as np
 
 class UnityEnvironment(BaseEnvironment):
-
+    # Observation parameters
+    num_camera_per_agent = 8
+    # fmt: off
+    camera_mapping = dict(
+        third_front     = 0,
+        third_isometric = 1,  # aka: top-down
+        first_front     = 2,
+        third_behind    = 3,  # aka: over-the-shoulder
+        third_oblique   = 4,  # aka: side-angle
+        first_right     = 5,
+        first_left      = 6,
+        first_back      = 7,
+    )
+    default_view = "third_behind"
+    # fmt: on
+    default_image_width = 300
+    default_image_height = 300
 
     def __init__(self,
                  num_agents=2,
@@ -64,24 +80,6 @@ class UnityEnvironment(BaseEnvironment):
         self.base_port = base_port
         self.port_id = port_id
         self.executable_args = executable_args
-
-        # Observation parameters
-        self.num_camera_per_agent = 8
-        # fmt: off
-        self.camera_mapping = dict(
-            third_front     = 0,
-            third_isometric = 1,  # aka: top-down
-            first_front     = 2,
-            third_behind    = 3,  # aka: over-the-shoulder
-            third_oblique   = 4,  # aka: side-angle
-            first_right     = 5,
-            first_left      = 6,
-            first_back      = 7,
-        )
-        self.default_view = "third_behind"
-        # fmt: on
-        self.default_image_width = 300
-        self.default_image_height = 300
 
         if observation_types is not None:
             self.observation_types = observation_types
