@@ -17,6 +17,8 @@ This is a fork to fix some issues starting from [`virtualhome@wah`](https://gith
    pip install -e .
    ```
 
+This codebase is compatible with v2.2.4 executable. Download the Linux x86-64 version [here](http://virtual-home.org/release/simulator/v2.0/v2.2.4/linux_exec.zip).
+
 ## Features
 
 - [x] fix agent camera observation ([`18def97`](https://github.com/ShunchiZhang/virtualhome/commit/18def97)), expose default parameters to class attributes for external access ([`72a87bd`](https://github.com/ShunchiZhang/virtualhome/commit/72a87bd))
