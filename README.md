@@ -4,7 +4,7 @@ This is a fork to fix some issues starting from [`virtualhome@wah`](https://gith
 
 ## Features
 
-- [x] fix agent camera observation, expose default parameters to class attributes for external access
-- [x] editable install
+- [x] fix agent camera observation ([`18def97`](https://github.com/ShunchiZhang/virtualhome/commit/18def97)), expose default parameters to class attributes for external access ([`72a87bd`](https://github.com/ShunchiZhang/virtualhome/commit/72a87bd))
+- [x] editable install ([`66aa2e0`](https://github.com/ShunchiZhang/virtualhome/commit/66aa2e0))
 - [x] update deprecated function names
-  - [x] `collections.Iterable` -> `collections.abc.Iterable`
+  - [x] `collections.Iterable` -> `collections.abc.Iterable` ([`82791b9`](https://github.com/ShunchiZhang/virtualhome/commit/82791b9))
