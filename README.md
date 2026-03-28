@@ -1,23 +1,20 @@
 # VirtualHome
 
-This is a fork to fix some issues starting from [`virtualhome@wah`](https://github.com/xavierpuigf/virtualhome/tree/wah), which is depended by [watch_and_help](https://github.com/xavierpuigf/watch_and_help), [online_watch_and_help](https://github.com/xavierpuigf/online_watch_and_help), and [GOMA](https://github.com/lance-ying/GOMA).
+This is a fork to fix some issues starting from [`virtualhome@wah`](https://github.com/xavierpuigf/virtualhome/tree/wah), which is depended by [AutoToM](https://github.com/shunchizhang/online_watch_and_help/tree/AutoToM) and [MindZero](https://github.com/shunchizhang/online_watch_and_help/tree/MindZero).
 
 ## Installation
 
-1. directly install this branch from github under site-packages
-   ```sh
-   pip install git+https://github.com/ShunchiZhang/virtualhome.git@wah-fix
-   ```
+1. Download VirtualHome v2.2.4 executable:
+[[Linux]](http://virtual-home.org/release/simulator/v2.0/v2.2.4/linux_exec.zip)
+[[MacOS]](http://virtual-home.org/release/simulator/v2.0/v2.2.4/macos_exec.zip)
+[[Windows]](http://virtual-home.org/release/simulator/v2.0/v2.2.4/windows_exec.zip)
 
-2. clone this branch and install editablely
+2. Clone and install `virtualhome` Python library:
    ```sh
-   git clone https://github.com/ShunchiZhang/virtualhome
+   git clone -b wah-fix https://github.com/ShunchiZhang/virtualhome
    cd virtualhome
-   git switch wah-fix
    pip install -e .
    ```
-
-This codebase is compatible with v2.2.4 executable. Download the Linux x86-64 version [here](http://virtual-home.org/release/simulator/v2.0/v2.2.4/linux_exec.zip).
 
 ## Features
 
